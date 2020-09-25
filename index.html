@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz App</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+        type="text/css" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Welcome Back to Bowties & Books!</h1>
+            <ul id="menu">
+                <!-- nav would include a logout button routing to landing page -->
+                <li><a href="#logout">LOGOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- start of returning user "Saved Games" Page -->
+        <div>
+            <h3>
+                Here’s a list of your saved games.
+                <br>
+                You may edit the title or delete them.
+                </br>
+            </h3>
+            <!-- how do I show a list of tables? -->
+            <!-- a bunch of ordered li tags maybe?-->
+            <table style="width:50%">
+                <!--test out different widths-->
+                <tr>
+                    <th>SAVED TITLE</th>
+                    <th>DATE OF GAME</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>exampleTitle1</td>
+                    <td>01/01/1970</td>
+                    <td>✏️</td>
+                    <td>🗑</td>
+                </tr>
+                <tr>
+                    <td>exampleTitle2</td>
+                    <td>11/09/2016</td>
+                    <td>✏️</td>
+                    <td>🗑</td>
+                </tr>
+            </table>
+            <h3>You can start a new game by clicking the button below:</h3>
+            <button id="button-restart-game">NEW GAME</button>
+        </div>
+        <!-- end of returning user "Saved Games" Page -->
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
